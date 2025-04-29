@@ -57,4 +57,14 @@ print(10==10)
 print(10==11)
 print(type(True), type(False), type(10==10))
 
+#Variables
+#It is used to represent memory spaces and its values.
+full_name = 'Luiz Marques'
+age = 30
+of_legal_age = age >= 18
+print('Name: ',full_name,'Age: ',age)
+print('of_legal_age?',of_legal_age)
+
+
+
 
