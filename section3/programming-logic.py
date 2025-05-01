@@ -73,3 +73,60 @@ multiplication = 10 * 10
 floor_division = 10 // 3
 exponentiation = 2 ** 10
 modulus = 10 % 2
+
+
+# Other uses to operators + and *
+concatenation = 'Luiz' + str(1) + ' ' + 'Marques'
+print(concatenation)
+
+repeting_a = 'A' * 10
+repeting_luiz = 3 * 'Luiz'
+print(repeting_a)
+print(repeting_luiz)
+
+# Operator precedence ( order of operations)
+# 1. (n + n)
+# 2. **
+# 3. * / // %
+# 4. + -
+count_1 = 1 + 1 ** 5 + 5 # 7
+count_2 = (1 + int(0.5 + 0.5)) ** (5 + 5) # 1024
+print(count_1,count_2,sep=' ---- ')
+
+# Ellipsis
+# It can be used to indicate that will be replaced by a content.
+imc = ...
+
+#f-strings
+#It can be used to format the strings in easy way.
+name = 'Luiz'
+height = 1.69
+weight = 100
+bmi = weight/height**2
+
+line_1 = f'{name} have {height:.2f} meters of height,'
+line_2 = f'his {weight} is kg and his bmi (body mass index) is'
+line_3 = f'{bmi:.2f}'
+
+print(line_1)
+print(line_2)
+print(line_3)
+
+#Format method from the string object
+#It is used to format strings.
+a = 'A'
+b = 'B'
+c = 1.1
+
+string = 'a={} b={} c={:.2f}'
+formating = string.format(a,b,c)
+print(formating)
+
+string = 'a={0} c={2:.4f} b={1}' # Using arguments indexes
+formating = string.format(a,b,c)
+print(formating)
+
+string = 'a={name1} c={name3:.5f} b={name2}'
+formating = string.format(name1=a,name2=b,name3=c)
+print(formating)
+
