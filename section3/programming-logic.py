@@ -97,8 +97,8 @@ print(count_1,count_2,sep=' ---- ')
 # It can be used to indicate that will be replaced by a content.
 imc = ...
 
-#f-strings
-#It can be used to format the strings in easy way.
+# f-strings
+# It can be used to format the strings in easy way.
 name = 'Luiz'
 height = 1.69
 weight = 100
@@ -112,8 +112,8 @@ print(line_1)
 print(line_2)
 print(line_3)
 
-#Format method from the string object
-#It is used to format strings.
+# Format method from the string object
+# It is used to format strings.
 a = 'A'
 b = 'B'
 c = 1.1
@@ -130,3 +130,28 @@ string = 'a={name1} c={name3:.5f} b={name2}'
 formating = string.format(name1=a,name2=b,name3=c)
 print(formating)
 
+# input function
+# It helps us to colect data from the user through the terminal.
+name = input('What is your name? ' )
+print(f'The name is {name}')
+
+num_1 = input('Type a number: ')
+num_2 = input('Type other number: ')
+
+int_num_1 = int(num_1)
+int_num_2 = int(num_2)
+
+print(f'The result is: {int_num_1 + int_num_2}')
+
+# Selection control struct
+# It helps us to verify conditions and choose a code block to execute.
+number = input('Type one or two: ')
+
+if int(number) == 1 :
+    print('The number one was chosen.')
+elif int(number) == 2 :
+    print('The number two was chosen')
+else :
+    print('Other number was typed.')
+
+print('The end of program.')

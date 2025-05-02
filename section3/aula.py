@@ -1,15 +1,10 @@
-a = 'A'
-b = 'B'
-c = 1.1
+number = input('Type one or two: ')
 
-string = 'a={} b={} c={:.2f}'
-formating = string.format(a,b,c)
-print(formating)
+if int(number) == 1 :
+    print('The number one was chosen.')
+elif int(number) == 2 :
+    print('The number two was chosen')
+else :
+    print('Other number was typed.')
 
-string = 'a={0} c={2:.4f} b={1}' # Using arguments indexes
-formating = string.format(a,b,c)
-print(formating)
-
-string = 'a={name1} c={name3:.5f} b={name2}'
-formating = string.format(name1=a,name2=b,name3=c)
-print(formating)
+print('The end of program.')
