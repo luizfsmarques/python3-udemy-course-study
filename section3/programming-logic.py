@@ -137,7 +137,6 @@ print(f'The name is {name}')
 
 num_1 = input('Type a number: ')
 num_2 = input('Type other number: ')
-
 int_num_1 = int(num_1)
 int_num_2 = int(num_2)
 
@@ -155,3 +154,9 @@ else :
     print('Other number was typed.')
 
 print('The end of program.')
+
+# I can do this: 
+# Set a condition in a variable and use that variable on if statment to be verified. 
+condition = True
+if condition :
+    print('Hello!')
